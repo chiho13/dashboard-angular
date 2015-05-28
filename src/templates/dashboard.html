@@ -1,98 +1,46 @@
-<div class="row alerts-container" data-ng-controller="AlertsCtrl" data-ng-show="alerts.length">
-  <div class="col-xs-12">
-    <alert data-ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
-  </div>
-</div>
+
+
 
 <div class="row">
-	<div class="col-lg-3 col-md-6 col-xs-12">
+	<div class="col-lg-12">
 		<rd-widget>
-			<rd-widget-body>
-				<div class="widget-icon green pull-left">
-					<i class="fa fa-users"></i>
-				</div>
-				<div class="title">80</div>
-				<div class="comment">Users</div>
-			</rd-widget-body>
-		</rd-widget>
-	</div>
-	<div class="col-lg-3 col-md-6 col-xs-12">
-		<rd-widget>
-			<rd-widget-body>
-				<div class="widget-icon red pull-left">
-					<i class="fa fa-tasks"></i>
-				</div>
-				<div class="title">16</div>
-				<div class="comment">Servers</div>
-			</rd-widget-body>
-		</rd-widget>
-	</div>
-	<div class="col-lg-3 col-md-6 col-xs-12">
-		<rd-widget>
-			<rd-widget-body>
-				<div class="widget-icon orange pull-left">
-					<i class="fa fa-sitemap"></i>
-				</div>
-				<div class="title">225</div>
-				<div class="comment">Documents</div>
-			</rd-widget-body>
-		</rd-widget>
-	</div>
-	<div class="col-lg-3 col-md-6 col-xs-12">
-		<rd-widget>
-			<rd-widget-body>
-				<div class="widget-icon blue pull-left">
-					<i class="fa fa-support"></i>
-				</div>
-				<div class="title">62</div>
-				<div class="comment">Tickets</div>
-			</rd-widget-body>
-		</rd-widget>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-lg-6">
-		<rd-widget>
-      		<rd-widget-header icon="fa-tasks" title="Servers">
-				<a href="#">Manage</a>
-      		</rd-widget-header>
-      		<rd-widget-body classes="medium no-padding">
-				<div class="table-responsive">
-					<table class="table">
-						<tbody>
-							<tr><td>RDVMPC001</td><td>238.103.133.37</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDVMPC002</td><td>68.66.63.170</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDVMPC003</td><td>76.117.212.33</td><td><span tooltip="Server Down!" class="text-danger"><i class="fa fa-warning"></i></span></td></tr>
-							<tr><td>RDPHPC001</td><td>91.88.224.5</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDESX001</td><td>197.188.15.93</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDESX002</td><td>168.85.154.251</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDESX003</td><td>209.25.191.61</td><td><span tooltip="Server Down!" class="text-danger"><i class="fa fa-warning"></i></span></td></tr>
-							<tr><td>RDESX004</td><td>252.37.192.235</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDTerminal01</td><td>139.71.18.207</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-							<tr><td>RDTerminal02</td><td>136.80.122.212</td><td><span tooltip="Could not connect!" class="text-warning"><i class="fa fa-flash"></i></span></td></tr>
-							<tr><td>RDDomainCont01</td><td>196.80.245.33</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
-						</tbody>
-					</table>
-				</div>
-			</rd-widget-body>
-		</rd-widget>
-	</div>
-	<div class="col-lg-6">
-		<rd-widget>
-			<rd-widget-header icon="fa-users" title="Users">
+			<rd-widget-header icon="fa-users" title="My Products">
 				<input type="text" placeholder="Search" class="form-control input-sm" />
 			</rd-widget-header>
 			<rd-widget-body classes="medium no-padding">
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
-							<tr><th class="text-center">ID</th><th>Username</th><th>Role</th><th>Account</th></tr>
+							<tr><th class="text-center">
+         
+           
+    <input type="checkbox" id="select-all">  
+           
+              </th><th>Products</th><th>Type</th><th>Description</th></tr>
 						</thead>
 						<tbody>
-							<tr><td class="text-center">1</td><td>Joe Bloggs</td><td>Super Admin</td><td>AZ23045</td></tr>
-							<tr><td class="text-center">2</td><td>Timothy Hernandez</td><td>Admin</td><td>AU24783</td></tr>
-							<tr><td class="text-center">3</td><td>Joe Bickham</td><td>User</td><td>AM23781</td></tr>
+							<tr>
+              <td class="text-center">
+                
+                       
+          <input type="checkbox" id="check-me">  
+            
+      
+              </td>
+
+              <td>Leather Handbag</td><td>Couture</td><td>Italian craftmanship, using the highest quality leather material. Artisan of Florence. One of a kind</td></tr>
+
+							<tr><td class="text-center">
+         
+                 <input type="checkbox" id="check-me">  
+              </td>
+              <td>Californian Denim Shirt</td><td>Streetwear</td><td>Classic and loose fit design made with soft denim fabric. 100% cotton. Machine Wash. </td></tr>
+
+							<tr><td class="text-center">
+               <input type="checkbox" id="check-me">  
+
+              </td>
+              <td>Circle Design Shirt</td><td>Summer</td><td>Crew neck Men's T-shirt. Circle design in the center. 100% cotton</td></tr>
 						</tbody>
 					</table>
         		</div>
@@ -100,24 +48,60 @@
 		<rd-widget>
 	</div>
 </div>
+</div>
+
+
 
 <div class="row">
-	<div class="col-lg-6">
+	<div class="col-lg-12">
    		<rd-widget>
-   			<rd-widget-header icon="fa-plus" title="Extras">
-   				<button class="btn btn-sm btn-info">Button</button>
+      
+   			<rd-widget-header icon="fa-plus" title="Add Products" ng-model="collapsed" ng-click="collapsed=!collapsed" class="rd-widget-header">
+   	
    			</rd-widget-header>
-   			<rd-widget-body>
-				<div class="message">
-					This is a standard message which will also work the ".no-padding" class, I can also <span class="error">be an error message!</span>
-				</div>
-				<hr />
-				<div class="message">
-					<a href="http://angular-ui.github.io/bootstrap/" target="_blank">UI Bootstrap</a> is included, so you can use <a href="#" tooltip="I'm a tooltip!">tooltips</a> and all of the other native Bootstrap JS components!
-				</div>
+
+   			<rd-widget-body ng-show="collapsed">
+   			<div class="panel-body">
+
+          <!-- Standar Form -->
+          <h4>Select files from your computer</h4>
+          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="files[]" id="js-upload-files" multiple="">
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+            </div>
+          </form>
+
+          <!-- Drop Zone -->
+         <hr>
+          <div class="upload-drop-zone" id="drop-zone">
+            Just drag and drop files here
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+
+          <!-- Upload Finished -->
+          <div class="js-upload-finished">
+            <h3>Processed files</h3>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-02.jpg</a>
+            </div>
+          </div>
+        </div>
    			</rd-widget-body>
    		</rd-widget>
 	</div>
+
+ <!--  <div class="row">
+
 	<div class="col-lg-6">
 		<rd-widget>
 			<rd-widget-header icon="fa-cog fa-spin" title="Loading Directive">
@@ -128,4 +112,4 @@
 			</rd-widget-body>
 		</rd-widget>
 	</div>
-</div>
+	</div> -->

@@ -11,12 +11,12 @@ angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
 
         // Application routes
         $stateProvider
-            .state('index', {
-                url: '/',
+            .state('products', {
+                url: '/products',
                 templateUrl: 'templates/dashboard.html'
             })
-            .state('tables', {
-                url: '/tables',
+            .state('analytics', {
+                url: '/analytics',
                 templateUrl: 'templates/tables.html'
             });
     }

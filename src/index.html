@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>RDash AngularJS</title>
+	<title>Brand | StyleMinons Dashboard</title>
   <!-- STYLES -->
   <!-- build:css lib/css/main.min.css -->
-  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="components/rdash-ui/dist/css/rdash.min.css">
+  <link rel="stylesheet" type="text/css" href="components/rdash-ui/dist/css/rdash.css">
+  
+ <link rel="stylesheet" type="text/css" href="components/dashboardcss/background.css">
+ <link rel="stylesheet" href="components/dashboardcss/angular-chart.css">
+
+
+ 
   <!-- endbuild -->
   <!-- SCRIPTS -->
   <!-- build:js lib/js/main.min.js -->
@@ -17,6 +23,10 @@
   <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
   <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="components/Chart.js/Chart.js"></script>
+<script src="components/angular-chart.js/dist/angular-chart.js"></script>
+
+
   <!-- endbuild -->
   <!-- Custom Scripts -->
   <script type="text/javascript" src="js/dashboard.min.js"></script>
@@ -29,32 +39,40 @@
       <ul class="sidebar">
         <li class="sidebar-main">
           <a ng-click="toggleSidebar()">
-            Dashboard
+            Style Minions
             <span class="menu-icon glyphicon glyphicon-transfer"></span>
           </a>
         </li>
-        <li class="sidebar-title"><span>NAVIGATION</span></li>
+
+        <li class="sidebar-title" style="font-size:17px"><span>Navigation</span></li>
+
         <li class="sidebar-list">
           <a href="#">Dashboard <span class="menu-icon fa fa-tachometer"></span></a>
         </li>
         <li class="sidebar-list">
-          <a href="#/tables">Tables <span class="menu-icon fa fa-table"></span></a>
+          <a href="#/products">My Products <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/analytics">Analytics <span class="menu-icon fa fa-table"></span></a>
+        </li>
+         <li class="sidebar-list">
+          <a href="#/tables">Manage Account <span class="menu-icon fa fa-cog"></span></a>
         </li>
       </ul>
       <div class="sidebar-footer">
         <div class="col-xs-4">
-          <a href="https://github.com/rdash/rdash-angular" target="_blank">
-            Github
+          <a href="#" target="_blank">
+            Terms
           </a>
         </div>
         <div class="col-xs-4">
-          <a href="https://github.com/rdash/rdash-angular/README.md" target="_blank">
+          <a href="http://styleminions.co" target="_blank">
             About
           </a>
         </div>
         <div class="col-xs-4">
           <a href="#">
-            Support
+            Contact
           </a>
         </div>
       </div>
@@ -74,7 +92,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li class="dropdown-header">
-                    Joe Bloggs
+                    Anthony Ho
                   </li>
                   <li class="divider"></li>
                   <li class="link">
@@ -84,12 +102,12 @@
                   </li>
                   <li class="link">
                     <a href="#">
-                      Menu Item
+                      Membership
                     </a>
                   </li>
                   <li class="link">
                     <a href="#">
-                      Menu Item
+                      Settings
                     </a>
                   </li>
                   <li class="divider"></li>
@@ -110,18 +128,16 @@
                   </li>
                   <li class="divider"></li>
                   <li>
-                    <a href="#">Server Down!</a>
+                    <a href="#">Number of votes today</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="meta">
               <div class="page">
-                Dashboard
+                Brand name
               </div>
-              <div class="breadcrumb-links">
-                Home / Dashboard
-              </div>
+             
             </div>
           </div>
         </div>
